@@ -167,5 +167,3 @@ If you want to go further, use:
 > The goal isn’t to code — it’s to think critically about data fairness.
 > Use ChatGPT to *handle the math*, and spend your time *interpreting the meaning*.
 
----
-
