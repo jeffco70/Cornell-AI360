@@ -29,7 +29,7 @@ Courses:
    - 16 CIS535 - 20260715_01 - Debugging and Improving Machine Learning Models
    - 17 CIS536 - 20260812_01 - Learning with Kernel Machines
    - 18 CIS537 - 20260826_01 - Deep Learning and Neural Networks
- - AI For Digital Transformation (Apr 22 - Jun 16)
+ - AI For Digital Transformation (Apr 22 - Jun 16) -> Move to Dec 17 2025 or After Sept 8, 2026.
    - CTECH431 - 20260422_01 - AI and Digital Technology: Opportunities and Pitfalls
    - CTECH432 - 20260506_01 - Demystifying AI and Digital Technologies
    - CTECH433 - 20260520_01 - AI and the Future of Work
