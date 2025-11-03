@@ -1,6 +1,6 @@
 # JCB703: Leveraging Data for AI Solutions Module 1
 
-L**everaging Data for AI Solutions Sections**
+**Leveraging Data for AI Solutions Sections**
 
 * **Part 1:** Module 1 – *Scraping and Cleaning the Right Data*
 * **Part 2:** Module 2 – *Identifying and Addressing Bias*
