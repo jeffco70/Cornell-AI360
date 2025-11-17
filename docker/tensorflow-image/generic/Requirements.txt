@@ -1,0 +1,14 @@
+# Basic data science stack
+pandas
+seaborn
+scikit-learn
+
+# Jupyter enhancements
+jupyterlab
+
+# Add more pip packages below as needed.
+# For example:
+# xgboost
+# lightgbm
+# matplotlib
+# numba

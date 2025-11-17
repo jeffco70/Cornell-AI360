@@ -1,0 +1,64 @@
+name: base
+channels:
+  - conda-forge
+  # - pytorch        # uncomment if you decide to conda-install PyTorch
+  # - nvidia         # for certain CUDA-enabled builds
+dependencies:
+  ##################################
+  # Numeric / performance extras   #
+  ##################################
+  - numpy
+  - scipy
+  - numba
+  - bottleneck
+  - numexpr
+
+  ##################################
+  # IO / data formats              #
+  ##################################
+  - pyarrow
+  - pytables
+  - h5py       # HDF5 support (often used with Keras/TF models)
+
+  ##################################
+  # Tools                          #
+  ##################################
+  - mamba
+  - pip
+
+  ##################################
+  # OPTIONAL: JAX (CPU or GPU)     #
+  ##################################
+  # For CPU-only JAX (safer in mixed env):
+  # - jax
+  # - jaxlib
+
+  # For GPU JAX, you’d normally pin CUDA version carefully and follow
+  # official JAX installation instructions; that can collide with the
+  # TF base image’s CUDA libs if not managed carefully.
+
+  ##################################
+  # OPTIONAL: PyTorch (GPU via conda)
+  ##################################
+  # If you really want PyTorch GPU inside this TF base, something like:
+  #
+  # - pytorch
+  # - torchvision
+  # - torchaudio
+  # - pytorch-cuda=12.1
+  #
+  # and channels:
+  #   - pytorch
+  #   - nvidia
+  #
+  # BUT: do this only when you’re ready to accept some CUDA/driver
+  # debugging; otherwise, use a dedicated PyTorch base image instead.
+
+  ##################################
+  # Pip extras managed via conda   #
+  ##################################
+  - pip:
+      # you can mirror some pip-only packages here if you prefer
+      # to manage everything through one spec file
+      - onnx
+      - onnxruntime-gpu

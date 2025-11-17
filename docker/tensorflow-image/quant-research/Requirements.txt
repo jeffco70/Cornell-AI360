@@ -1,0 +1,58 @@
+##############################
+# Core numeric / array stack #
+##############################
+numpy
+pandas
+scipy
+
+##############################
+# Visualization              #
+##############################
+matplotlib
+seaborn
+plotly
+# Optional: interactive plotting in notebooks
+# bokeh
+
+##############################
+# Time series & stats        #
+##############################
+statsmodels
+arch                      # GARCH / volatility modeling
+pmdarima                  # ARIMA auto-model selection (optional)
+
+##############################
+# Backtesting / trading      #
+##############################
+# Lightweight, Python-based backtesting engines
+backtrader
+vectorbt                   # vectorized backtesting / portfolio analysis
+# zipline-reloaded         # can be tricky, leave commented unless you want the pain
+
+##############################
+# Data access / APIs         #
+##############################
+yfinance                   # Yahoo Finance data
+pandas-datareader          # multiple remote sources (FRED, etc.)
+alpha-vantage              # AlphaVantage API (you bring the key)
+# ccxt                      # crypto exchange connectors (optional)
+
+##############################
+# Portfolio & optimization   #
+##############################
+cvxpy                       # convex optimization (for alloc / risk)
+riskfolio-lib               # portfolio optimization / risk management
+
+##############################
+# ML / feature engineering   #
+##############################
+scikit-learn
+xgboost
+lightgbm
+
+##############################
+# Utilities                  #
+##############################
+tqdm
+ipywidgets
+jupyterlab

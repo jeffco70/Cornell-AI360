@@ -1,0 +1,86 @@
+##############################
+# Core numeric / notebook    #
+##############################
+numpy
+pandas
+scipy
+jupyterlab
+ipykernel
+ipython
+tqdm
+ipywidgets
+
+##############################
+# Visualization              #
+##############################
+matplotlib
+seaborn
+plotly
+
+##############################
+# TensorFlow ecosystem       #
+##############################
+# TF itself is baked into the base image, so we generally avoid
+# reinstalling it here to prevent version mismatch.
+tensorflow-datasets
+tensorflow-probability
+# tensorflow-addons   # can be version-sensitive; enable if needed and pin versions
+
+##############################
+# Keras / high-level DL      #
+##############################
+keras                        # usually already available via tf.keras but useful standalone
+keras-tuner                 # hyperparameter search
+optuna                      # generic hyperparameter optimization
+
+##############################
+# Hugging Face stack         #
+##############################
+transformers
+datasets
+accelerate
+evaluate
+sentencepiece
+huggingface-hub
+
+##############################
+# Computer vision / images   #
+##############################
+opencv-python
+Pillow
+albumentations              # image augmentations
+
+##############################
+# Audio / speech (optional)  #
+##############################
+librosa
+soundfile
+
+##############################
+# RL / control (optional)    #
+##############################
+gymnasium
+gymnasium[classic-control]
+# tf-agents                 # optional, can be somewhat version-sensitive
+
+##############################
+# Utilities / tooling        #
+##############################
+rich                        # nicer console logging
+tensorboard                 # usually in TF base; safe to include
+tensorboard-plugin-profile  # profiling support
+wandb                       # experiment tracking (optional)
+mlflow                      # experiment tracking (optional)
+
+##############################
+# OPTIONAL: PyTorch (CPU-only)
+##############################
+# If you want CPU-only PyTorch just for experimentation and don’t care
+# about PyTorch GPU inside this container, you can uncomment:
+# torch
+# torchvision
+# torchaudio
+
+# For proper GPU PyTorch, it’s safer to either:
+#   - Use a dedicated PyTorch CUDA base image, or
+#   - Install via conda in environment.yml with pinned CUDA versions.

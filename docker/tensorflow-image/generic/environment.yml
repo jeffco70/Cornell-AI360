@@ -1,0 +1,29 @@
+name: base  # we update the base env in the Dockerfile
+channels:
+  - conda-forge
+dependencies:
+  # You can pin Python if you want, but the TF base image already has Python.
+  # - python=3.11
+
+  # Numeric / stats stack (examples)
+  - numpy
+  - scipy
+  - statsmodels
+  - numba
+
+  # Plotting / viz (you may prefer pip for seaborn/matplotlib; up to you)
+  # - matplotlib
+
+  # ML / data utils
+  - pytables
+  - pyarrow
+
+  # Mamba itself (usually already present, but safe to list)
+  - mamba
+
+  # pip section is optional; you can add pip-only packages here too
+  - pip
+  - pip:
+      # Example: some packages that are only on pip or you prefer from pip
+      - ta
+      - yfinance

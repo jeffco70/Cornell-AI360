@@ -1,0 +1,51 @@
+name: base
+channels:
+  - conda-forge
+dependencies:
+  # You can pin Python if you want, but TF base already has it
+  # - python=3.11
+
+  ##################################
+  # Numeric / linear algebra stack #
+  ##################################
+  - numpy
+  - scipy
+  - numba
+  - bottleneck
+  - numexpr
+
+  ##################################
+  # IO / data formats              #
+  ##################################
+  - pyarrow        # parquet / arrow tables
+  - pytables       # HDF5 support
+  - openpyxl       # Excel IO
+  - xlrd           # legacy excel
+
+  ##################################
+  # Optimization / solvers         #
+  ##################################
+  - cvxopt         # lower-level convex optimization
+  - glpk           # linear programming backend
+
+  ##################################
+  # Time handling / calendars      #
+  ##################################
+  - python-dateutil
+  - pytz
+
+  ##################################
+  # Tools                          #
+  ##################################
+  - mamba
+  - pip
+
+  ##################################
+  # Pip-only quant extras          #
+  ##################################
+  - pip:
+      # Quant-related libs better handled via pip but specified here
+      - ta                # technical analysis indicators
+      - empyrical         # performance stats (like Quantopian style)
+      - alphalens         # factor analysis (Quantopian-style, sometimes finicky)
+      - ffns              # Fama-French data / regression helpers (optional)
